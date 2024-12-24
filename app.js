@@ -38,7 +38,7 @@ function search(){
         ln.innerText = data.Language;
         desc.innerText = data.Plot;
         ratings.innerText = data.imdbRating;
-        poster.src = data.Poster;
+        poster.src = data.Poster !== "N/A" ? data.Poster : "default_image.png";
         if(data.imdbRating > 7){
             suggestion.innerText = 'Worth Watching'
         }
