@@ -1,4 +1,3 @@
-/* Reset the global padding */
 * {
     padding: 0;
     margin: 0;
@@ -18,6 +17,10 @@ body {
     margin: 30px auto;
     text-align: center;
     padding: 0 15px;
+}
+
+.header h2 {
+    margin-bottom: 8px;
 }
 
 .flex {
@@ -96,8 +99,6 @@ input:focus {
 .banner {
     position: relative;
 }
-
-/* Media Queries for better responsiveness */
 @media screen and (max-width: 768px) {
     .flex {
         flex-direction: column;
@@ -108,5 +109,29 @@ input:focus {
         width: 100%;
         max-width: 100%;
         border-radius: 12px;
+    }
+
+    .header h2 {
+        font-size: 1rem;
+        line-height: 1;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    
+    .header p {
+        font-size: 0.8rem;
+        line-height: 1;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+
+    .header {
+        padding: 0 10px;
+        margin: 20px auto;
+    }
+
+    .logo {
+        height: 80px;
+        margin-bottom: 10px;
     }
 }
