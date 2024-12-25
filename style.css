@@ -100,49 +100,13 @@ input:focus {
 /* Media Queries for better responsiveness */
 @media screen and (max-width: 768px) {
     .flex {
-        gap: 0;
+        flex-direction: column;
+        gap: 10px;
     }
     
-    input {
-        border-radius: 12px 0 0 12px;
+    input, .btn {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 12px;
     }
-    
-    .btn {
-        border-radius: 0 12px 12px 0;
-    }
-}
-
-/* Additional text styles */
-.text-white {
-    color: white;
-}
-
-.text-center {
-    text-align: center;
-}
-
-/* Font sizes */
-.text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-}
-
-.text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-}
-
-/* Spacing utilities */
-.mt-3 {
-    margin-top: 0.75rem;
-}
-
-.py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-}
-
-.px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
