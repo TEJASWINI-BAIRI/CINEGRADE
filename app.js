@@ -1,4 +1,4 @@
-let api = 'https://www.omdbapi.com/?apikey=61e576a4&t='
+let api = 'https://www.omdbapi.com/?apikey=438c9068&t='
 
 let title = document.querySelector('#title');
 let desc = document.querySelector('#desc');
